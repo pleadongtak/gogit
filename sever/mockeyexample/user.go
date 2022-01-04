@@ -1,9 +1,8 @@
-
 package mockeyexample
 
 import (
-"context"
-"errors"
+	"context"
+	"errors"
 )
 
 // ErrKeyConflict insert or update 시 키 충돌 시 발생합니다.
@@ -15,7 +14,7 @@ type User struct {
 	Name  string
 }
 
-//go:generate mockery --name UserDB --case underscore --inpackageg
+//go:generate mockery --name UserDB --case underscore --inpackage
 // UserDB 사용자 관련 CRUD 인터페이스를 나타냅니다.
 type UserDB interface {
 	Save(ctx context.Context, u *User) error

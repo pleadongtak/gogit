@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
-	fmt.Printf("test")
+	for {
+		fmt.Printf("docker ,hello")
+		time.Sleep(10 * time.Second)
+	}
 }
